@@ -8,7 +8,7 @@ namespace CapaEntidad
 {
     public class clsCompra
     {
-        public int Id { get; set; }
+        public int IdCompra { get; set; }
         public clsUsuario objUsuario { get; set; }
         public clsProveedor objProveedor { get; set; }
         public string TipoDocumento { get; set; }

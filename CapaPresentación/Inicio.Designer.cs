@@ -55,7 +55,7 @@
             // menutitulo
             // 
             this.menutitulo.AutoSize = false;
-            this.menutitulo.BackColor = System.Drawing.Color.SteelBlue;
+            this.menutitulo.BackColor = System.Drawing.Color.CadetBlue;
             this.menutitulo.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menutitulo.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menutitulo.Location = new System.Drawing.Point(0, 0);
@@ -68,7 +68,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.SteelBlue;
+            this.label1.BackColor = System.Drawing.Color.CadetBlue;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(21, 22);
@@ -80,7 +80,7 @@
             // label
             // 
             this.label.AutoSize = true;
-            this.label.BackColor = System.Drawing.Color.SteelBlue;
+            this.label.BackColor = System.Drawing.Color.CadetBlue;
             this.label.ForeColor = System.Drawing.Color.White;
             this.label.Location = new System.Drawing.Point(846, 43);
             this.label.Name = "label";
@@ -91,7 +91,7 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.BackColor = System.Drawing.Color.SteelBlue;
+            this.lblUsuario.BackColor = System.Drawing.Color.CadetBlue;
             this.lblUsuario.ForeColor = System.Drawing.Color.White;
             this.lblUsuario.Location = new System.Drawing.Point(732, 43);
             this.lblUsuario.Name = "lblUsuario";

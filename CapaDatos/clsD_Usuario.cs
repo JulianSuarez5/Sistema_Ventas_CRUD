@@ -54,8 +54,8 @@ namespace CapaDatos
 
                     Lista = new List<clsUsuario>();
                 }
-                return Lista;
             }
+            return Lista;
         }
         public int Registrar(clsUsuario obj, out string Mensaje) 
         { 

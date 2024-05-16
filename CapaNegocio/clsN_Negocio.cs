@@ -44,7 +44,7 @@ namespace CapaNegocio
             }
         }
 
-        public byte [] ObtenerDatos(out bool Obtenido)
+        public byte [] ObtenerLogo(out bool Obtenido)
         {
             return objclsD_Negocio.ObtenerLogo(out Obtenido);
         }

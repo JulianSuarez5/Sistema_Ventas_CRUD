@@ -32,7 +32,7 @@ namespace CapaPresentación
         private void frmNegocio_Load(object sender, EventArgs e)
         {
             bool Obtenido = true;
-            byte[] ByteImage = new clsN_Negocio().ObtenerDatos(out Obtenido);
+            byte[] ByteImage = new clsN_Negocio().ObtenerLogo(out Obtenido);
 
             if (Obtenido)
                 picLogo.Image = ByteToImage(ByteImage);
