@@ -111,7 +111,7 @@ namespace CapaPresentación
                 if (Resultado)
                 {
                     DataGridViewRow row = dgvCategorias.Rows[Convert.ToInt32(txtIndice.Text)];
-                    row.Cells["Id"].Value = txtIndice.Text;
+                    row.Cells["Id"].Value = txtId.Text;
                     row.Cells["Descripcion"].Value = txtDescripcion.Text;
                     row.Cells["EstadoValor"].Value = ((clsOpcionCombo)cboEstado.SelectedItem).Valor.ToString();
                     row.Cells["Estado"].Value = ((clsOpcionCombo)cboEstado.SelectedItem).Texto.ToString();

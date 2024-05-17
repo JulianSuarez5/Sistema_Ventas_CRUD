@@ -82,7 +82,7 @@
             this.label.AutoSize = true;
             this.label.BackColor = System.Drawing.Color.CadetBlue;
             this.label.ForeColor = System.Drawing.Color.White;
-            this.label.Location = new System.Drawing.Point(846, 43);
+            this.label.Location = new System.Drawing.Point(1540, 43);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(64, 20);
             this.label.TabIndex = 4;
@@ -93,7 +93,7 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.BackColor = System.Drawing.Color.CadetBlue;
             this.lblUsuario.ForeColor = System.Drawing.Color.White;
-            this.lblUsuario.Location = new System.Drawing.Point(732, 43);
+            this.lblUsuario.Location = new System.Drawing.Point(1426, 43);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(68, 20);
             this.lblUsuario.TabIndex = 5;

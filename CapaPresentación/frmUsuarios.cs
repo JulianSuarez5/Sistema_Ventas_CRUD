@@ -138,7 +138,7 @@ namespace CapaPresentación
                 if (Resultado)
                 {
                     DataGridViewRow row = dgvUsuarios.Rows[Convert.ToInt32(txtIndice.Text)];
-                    row.Cells["Id"].Value = txtIndice.Text;
+                    row.Cells["Id"].Value = txtId.Text;
                     row.Cells["Documento"].Value = txtDocumento.Text;
                     row.Cells["Nombre_Completo"].Value = txtNombreCompleto.Text;
                     row.Cells["Correo"].Value = txtCorreo.Text;
@@ -162,7 +162,7 @@ namespace CapaPresentación
             txtIndice.Text = "-1";
             txtNombreCompleto.Text = "";
             txtDocumento.Text = "";
-            txtId.Text = "0";
+            txtId.Text = "";
             txtCorreo.Text = "";
             txtClave.Text = "";
             txtConfirmarClave.Text = "";

@@ -116,7 +116,7 @@ namespace CapaPresentación
                 if (Resultado)
                 {
                     DataGridViewRow row = dgvProveedores.Rows[Convert.ToInt32(txtIndice.Text)];
-                    row.Cells["Id"].Value = txtIndice.Text;
+                    row.Cells["Id"].Value = txtId.Text;
                     row.Cells["Documento"].Value = txtDocumento.Text;
                     row.Cells["RazonSocial"].Value = txtRazonSocial.Text;
                     row.Cells["Correo"].Value = txtCorreo.Text;
