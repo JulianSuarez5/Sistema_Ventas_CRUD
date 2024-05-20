@@ -48,10 +48,8 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.nudCantidad = new System.Windows.Forms.NumericUpDown();
             this.txtPrecioVenta = new System.Windows.Forms.TextBox();
-            this.txtPrecioCompra = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.txtNombreProducto = new System.Windows.Forms.TextBox();
             this.btnBuscarProducto = new FontAwesome.Sharp.IconButton();
             this.txtIdProducto = new System.Windows.Forms.TextBox();
@@ -69,6 +67,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.btnRegistrar = new FontAwesome.Sharp.IconButton();
             this.btnAgregarProducto = new FontAwesome.Sharp.IconButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtPrecioCompra = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -180,7 +180,7 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Location = new System.Drawing.Point(844, 78);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(701, 124);
+            this.groupBox2.Size = new System.Drawing.Size(785, 124);
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Información Proveedor";
@@ -280,14 +280,6 @@
             this.txtPrecioVenta.TabIndex = 32;
             this.txtPrecioVenta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecioVenta_KeyPress);
             // 
-            // txtPrecioCompra
-            // 
-            this.txtPrecioCompra.Location = new System.Drawing.Point(609, 105);
-            this.txtPrecioCompra.Name = "txtPrecioCompra";
-            this.txtPrecioCompra.Size = new System.Drawing.Size(163, 26);
-            this.txtPrecioCompra.TabIndex = 29;
-            this.txtPrecioCompra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecioCompra_KeyPress);
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -305,15 +297,6 @@
             this.label10.Size = new System.Drawing.Size(104, 20);
             this.label10.TabIndex = 30;
             this.label10.Text = "Precio Venta:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(605, 73);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 20);
-            this.label9.TabIndex = 29;
-            this.label9.Text = "Precio Compra:";
             // 
             // txtNombreProducto
             // 
@@ -475,6 +458,7 @@
             // 
             // btnRegistrar
             // 
+            this.btnRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btnRegistrar.IconChar = FontAwesome.Sharp.IconChar.Tag;
             this.btnRegistrar.IconColor = System.Drawing.Color.DodgerBlue;
@@ -490,6 +474,7 @@
             // 
             // btnAgregarProducto
             // 
+            this.btnAgregarProducto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgregarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btnAgregarProducto.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
             this.btnAgregarProducto.IconColor = System.Drawing.Color.ForestGreen;
@@ -504,6 +489,23 @@
             this.btnAgregarProducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnAgregarProducto.UseVisualStyleBackColor = true;
             this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(605, 73);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(117, 20);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "Precio Compra:";
+            // 
+            // txtPrecioCompra
+            // 
+            this.txtPrecioCompra.Location = new System.Drawing.Point(609, 105);
+            this.txtPrecioCompra.Name = "txtPrecioCompra";
+            this.txtPrecioCompra.Size = new System.Drawing.Size(163, 26);
+            this.txtPrecioCompra.TabIndex = 29;
+            this.txtPrecioCompra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecioCompra_KeyPress);
             // 
             // frmCompras
             // 
@@ -556,10 +558,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtPrecioVenta;
-        private System.Windows.Forms.TextBox txtPrecioCompra;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtNombreProducto;
         private FontAwesome.Sharp.IconButton btnBuscarProducto;
         private System.Windows.Forms.TextBox txtIdProducto;
@@ -577,5 +577,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Subtotal;
         private System.Windows.Forms.DataGridViewButtonColumn btnEliminar;
+        private System.Windows.Forms.TextBox txtPrecioCompra;
+        private System.Windows.Forms.Label label9;
     }
 }

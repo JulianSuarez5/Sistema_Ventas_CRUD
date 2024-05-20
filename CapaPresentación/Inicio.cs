@@ -74,7 +74,7 @@ namespace CapaPresentación
 
         private void submenuRegistrarVenta_Click_1(object sender, EventArgs e)
         {
-            AbrirFormulario(MenuVentas, new frmVentas());
+            AbrirFormulario(MenuVentas, new frmVentas(UsuarioActual));
         }
 
         private void submenuDetalleVentas_Click(object sender, EventArgs e)
@@ -102,16 +102,15 @@ namespace CapaPresentación
             AbrirFormulario((IconMenuItem)sender, new frmProveedores());
         }
 
-        private void MenuReportes_Click_1(object sender, EventArgs e)
-        {
-            AbrirFormulario((IconMenuItem)sender, new frmReportes());
-        }
-
         private void negocio_Click(object sender, EventArgs e)
         {
             AbrirFormulario(MenuMantenedor, new frmNegocio());
         }
 
+        private void submenuReporteCompras_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(MenuReportes, new frmReportesCompras());
+        }
         private void Inicio_Load_1(object sender, EventArgs e)
         {
 
@@ -127,6 +126,11 @@ namespace CapaPresentación
             }*/
 
             label.Text = UsuarioActual.NombreCompleto;
+        }
+
+        private void submenuReporteVentas_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(MenuReportes, new frmReporteVentas());
         }
     }
 }

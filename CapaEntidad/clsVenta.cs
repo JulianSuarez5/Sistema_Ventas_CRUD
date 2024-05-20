@@ -9,7 +9,7 @@ namespace CapaEntidad
     public class clsVenta
     {
         public int IdVenta { get; set; }
-        public clsUsuario qusuario { get; set; }
+        public clsUsuario objUsuario { get; set; }
         public string TipoDocumento { get; set; }
         public string NumeroDocumento { get; set; }
         public string DocumentoCliente { get; set; }
@@ -18,5 +18,6 @@ namespace CapaEntidad
         public decimal MontoCambio { get; set; }
         public decimal MontoTotal { get; set; }
         public string FechaRegistro { get; set; }
+        public List<clsDetalle_Venta> objDetalle_Venta { get; set; }
     }
 }

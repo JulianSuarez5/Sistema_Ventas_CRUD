@@ -50,8 +50,10 @@
     <Compile Include="clsD_Permiso.cs" />
     <Compile Include="clsD_Producto.cs" />
     <Compile Include="clsD_Proveedor.cs" />
+    <Compile Include="clsD_Reporte.cs" />
     <Compile Include="clsD_Rol.cs" />
     <Compile Include="clsD_Usuario.cs" />
+    <Compile Include="clsD_Venta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

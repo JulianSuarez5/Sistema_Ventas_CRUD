@@ -75,7 +75,7 @@ namespace CapaPresentación
             Texto_Html = Texto_Html.Replace("@direcnegocio", objDatos.Direccion);
 
             Texto_Html = Texto_Html.Replace("@tipodocumento", txtTipoDocumento.Text.ToUpper());
-            Texto_Html = Texto_Html.Replace("@numerodocumento", txtDocumentoProveedor.Text);
+            Texto_Html = Texto_Html.Replace("@numerodocumento", txtNumeroDocumento.Text);
 
             Texto_Html = Texto_Html.Replace("@docproveedor", txtDocumentoProveedor.Text);
             Texto_Html = Texto_Html.Replace("@nombreproveedor", txtNombreProveedor.Text);
@@ -96,7 +96,7 @@ namespace CapaPresentación
             Texto_Html = Texto_Html.Replace("@montototal", txtMontoTotal.Text);
 
             SaveFileDialog saveFile = new SaveFileDialog();
-            saveFile.FileName = string.Format("Compra{0}.pdf", txtDocumentoProveedor.Text);
+            saveFile.FileName = string.Format("Compra{0}.pdf", txtNumeroDocumento.Text);
             saveFile.Filter = "Pdf Files | *.pdf";
 
             if (saveFile.ShowDialog() == DialogResult.OK)

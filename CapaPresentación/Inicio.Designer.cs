@@ -47,6 +47,8 @@
             this.MenuClientes = new FontAwesome.Sharp.IconMenuItem();
             this.MenuProveedores = new FontAwesome.Sharp.IconMenuItem();
             this.MenuReportes = new FontAwesome.Sharp.IconMenuItem();
+            this.submenuReporteCompras = new System.Windows.Forms.ToolStripMenuItem();
+            this.submenuReporteVentas = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuAcercaDe = new FontAwesome.Sharp.IconMenuItem();
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.menu.SuspendLayout();
@@ -158,7 +160,7 @@
             this.submenuCategoria.IconColor = System.Drawing.Color.Black;
             this.submenuCategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuCategoria.Name = "submenuCategoria";
-            this.submenuCategoria.Size = new System.Drawing.Size(210, 38);
+            this.submenuCategoria.Size = new System.Drawing.Size(270, 38);
             this.submenuCategoria.Text = "Categoria";
             this.submenuCategoria.Click += new System.EventHandler(this.submenuCategoria_Click_1);
             // 
@@ -168,14 +170,14 @@
             this.submenuProductos.IconColor = System.Drawing.Color.Black;
             this.submenuProductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuProductos.Name = "submenuProductos";
-            this.submenuProductos.Size = new System.Drawing.Size(210, 38);
+            this.submenuProductos.Size = new System.Drawing.Size(270, 38);
             this.submenuProductos.Text = "Producto";
             this.submenuProductos.Click += new System.EventHandler(this.submenuProductos_Click_1);
             // 
             // negocio
             // 
             this.negocio.Name = "negocio";
-            this.negocio.Size = new System.Drawing.Size(210, 38);
+            this.negocio.Size = new System.Drawing.Size(270, 38);
             this.negocio.Text = "Negocio";
             this.negocio.Click += new System.EventHandler(this.negocio_Click);
             // 
@@ -281,6 +283,9 @@
             // 
             // MenuReportes
             // 
+            this.MenuReportes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.submenuReporteCompras,
+            this.submenuReporteVentas});
             this.MenuReportes.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.MenuReportes.IconChar = FontAwesome.Sharp.IconChar.BarChart;
             this.MenuReportes.IconColor = System.Drawing.Color.Black;
@@ -291,7 +296,20 @@
             this.MenuReportes.Size = new System.Drawing.Size(115, 84);
             this.MenuReportes.Text = "Reportes";
             this.MenuReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.MenuReportes.Click += new System.EventHandler(this.MenuReportes_Click_1);
+            // 
+            // submenuReporteCompras
+            // 
+            this.submenuReporteCompras.Name = "submenuReporteCompras";
+            this.submenuReporteCompras.Size = new System.Drawing.Size(286, 38);
+            this.submenuReporteCompras.Text = "Reporte Compras";
+            this.submenuReporteCompras.Click += new System.EventHandler(this.submenuReporteCompras_Click);
+            // 
+            // submenuReporteVentas
+            // 
+            this.submenuReporteVentas.Name = "submenuReporteVentas";
+            this.submenuReporteVentas.Size = new System.Drawing.Size(286, 38);
+            this.submenuReporteVentas.Text = "Reporte Ventas";
+            this.submenuReporteVentas.Click += new System.EventHandler(this.submenuReporteVentas_Click);
             // 
             // MenuAcercaDe
             // 
@@ -361,6 +379,8 @@
         private FontAwesome.Sharp.IconMenuItem submenuRegistrarVenta;
         private FontAwesome.Sharp.IconMenuItem submenuDetalleVentas;
         private FontAwesome.Sharp.IconMenuItem MenuClientes;
+        private System.Windows.Forms.ToolStripMenuItem submenuReporteCompras;
+        private System.Windows.Forms.ToolStripMenuItem submenuReporteVentas;
     }
 }
 

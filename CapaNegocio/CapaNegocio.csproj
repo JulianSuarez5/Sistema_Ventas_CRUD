@@ -48,8 +48,10 @@
     <Compile Include="clsN_Permiso.cs" />
     <Compile Include="clsN_Producto.cs" />
     <Compile Include="clsN_Proveedor.cs" />
+    <Compile Include="clsN_Reporte.cs" />
     <Compile Include="clsN_Rol.cs" />
     <Compile Include="clsN_Usuario.cs" />
+    <Compile Include="clsN_Venta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

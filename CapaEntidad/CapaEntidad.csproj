@@ -47,6 +47,8 @@
     <Compile Include="clsDetalle_Compra.cs" />
     <Compile Include="clsDetalle_Venta.cs" />
     <Compile Include="clsNegocio.cs" />
+    <Compile Include="clsReporteCompra.cs" />
+    <Compile Include="clsReporteVentas.cs" />
     <Compile Include="clsVenta.cs" />
     <Compile Include="clsPermiso.cs" />
     <Compile Include="clsProducto.cs" />
