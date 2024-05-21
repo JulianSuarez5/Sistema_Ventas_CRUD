@@ -143,9 +143,9 @@ namespace CapaPresentación
         private void btnSalir_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Desea salir?",
-                                "Mensaje",
-                                MessageBoxButtons.YesNo,
-                                MessageBoxIcon.Question) == DialogResult.Yes)
+                               "Mensaje",
+                               MessageBoxButtons.YesNo,
+                               MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 this.Close();
             }
