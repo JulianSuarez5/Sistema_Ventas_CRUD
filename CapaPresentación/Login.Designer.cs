@@ -123,7 +123,7 @@
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(152, 52);
             this.btnIngresar.TabIndex = 7;
-            this.btnIngresar.Text = "Ingrear";
+            this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnIngresar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnIngresar.UseVisualStyleBackColor = false;
