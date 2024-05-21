@@ -153,6 +153,7 @@
             this.btnBuscarProducto.TabIndex = 61;
             this.btnBuscarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarProducto.UseVisualStyleBackColor = false;
+            this.btnBuscarProducto.Click += new System.EventHandler(this.btnBuscarProducto_Click);
             // 
             // btnExportar
             // 
@@ -174,6 +175,7 @@
             this.btnExportar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExportar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExportar.UseVisualStyleBackColor = false;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
             // 
             // label4
             // 
@@ -201,6 +203,7 @@
             this.btnLimpiarBuscador.Size = new System.Drawing.Size(84, 39);
             this.btnLimpiarBuscador.TabIndex = 62;
             this.btnLimpiarBuscador.UseVisualStyleBackColor = false;
+            this.btnLimpiarBuscador.Click += new System.EventHandler(this.btnLimpiarBuscador_Click);
             // 
             // txtBusqueda
             // 

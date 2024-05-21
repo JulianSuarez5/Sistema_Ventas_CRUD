@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaNegocio;
+using CapaPresentación.Modales;
 
 namespace CapaPresentación
 {
@@ -114,7 +115,7 @@ namespace CapaPresentación
         private void Inicio_Load_1(object sender, EventArgs e)
         {
 
-           /* List<clsPermiso> ListaPermisos = new clsN_Permiso().Listar(UsuarioActual.IdUsuario);
+           List<clsPermiso> ListaPermisos = new clsN_Permiso().Listar(UsuarioActual.IdUsuario);
 
             foreach (IconMenuItem iconmenu in menu.Items)
             {
@@ -123,7 +124,7 @@ namespace CapaPresentación
                 {
                     iconmenu.Visible = false;
                 }
-            }*/
+            }
 
             label.Text = UsuarioActual.NombreCompleto;
         }
@@ -131,6 +132,23 @@ namespace CapaPresentación
         private void submenuReporteVentas_Click(object sender, EventArgs e)
         {
             AbrirFormulario(MenuReportes, new frmReporteVentas());
+        }
+
+        private void MenuAcercaDe_Click(object sender, EventArgs e)
+        {
+            frmModalAcercaDe acerca = new frmModalAcercaDe();
+            acerca.ShowDialog();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea salir?",
+                                "Mensaje",
+                                MessageBoxButtons.YesNo,
+                                MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }
