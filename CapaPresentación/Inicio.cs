@@ -117,14 +117,14 @@ namespace CapaPresentación
 
            List<clsPermiso> ListaPermisos = new clsN_Permiso().Listar(UsuarioActual.IdUsuario);
 
-            foreach (IconMenuItem iconmenu in menu.Items)
+            /*foreach (IconMenuItem iconmenu in menu.Items)
             {
                 bool Encontrado = ListaPermisos.Any(m => m.NombreMenu == iconmenu.Name);
                 if (Encontrado == false)
                 {
                     iconmenu.Visible = false;
                 }
-            }
+            }*/
 
             label.Text = UsuarioActual.NombreCompleto;
         }
