@@ -48,8 +48,10 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.nudCantidad = new System.Windows.Forms.NumericUpDown();
             this.txtPrecioVenta = new System.Windows.Forms.TextBox();
+            this.txtPrecioCompra = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtNombreProducto = new System.Windows.Forms.TextBox();
             this.btnBuscarProducto = new FontAwesome.Sharp.IconButton();
             this.txtIdProducto = new System.Windows.Forms.TextBox();
@@ -67,8 +69,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.btnRegistrar = new FontAwesome.Sharp.IconButton();
             this.btnAgregarProducto = new FontAwesome.Sharp.IconButton();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtPrecioCompra = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -123,7 +123,7 @@
             this.cboTipoDocumento.FormattingEnabled = true;
             this.cboTipoDocumento.Location = new System.Drawing.Point(209, 58);
             this.cboTipoDocumento.Name = "cboTipoDocumento";
-            this.cboTipoDocumento.Size = new System.Drawing.Size(157, 28);
+            this.cboTipoDocumento.Size = new System.Drawing.Size(224, 28);
             this.cboTipoDocumento.TabIndex = 3;
             // 
             // label4
@@ -280,6 +280,14 @@
             this.txtPrecioVenta.TabIndex = 32;
             this.txtPrecioVenta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecioVenta_KeyPress);
             // 
+            // txtPrecioCompra
+            // 
+            this.txtPrecioCompra.Location = new System.Drawing.Point(609, 105);
+            this.txtPrecioCompra.Name = "txtPrecioCompra";
+            this.txtPrecioCompra.Size = new System.Drawing.Size(163, 26);
+            this.txtPrecioCompra.TabIndex = 29;
+            this.txtPrecioCompra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecioCompra_KeyPress);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -297,6 +305,15 @@
             this.label10.Size = new System.Drawing.Size(104, 20);
             this.label10.TabIndex = 30;
             this.label10.Text = "Precio Venta:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(605, 73);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(117, 20);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "Precio Compra:";
             // 
             // txtNombreProducto
             // 
@@ -489,23 +506,6 @@
             this.btnAgregarProducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnAgregarProducto.UseVisualStyleBackColor = true;
             this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(605, 73);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 20);
-            this.label9.TabIndex = 29;
-            this.label9.Text = "Precio Compra:";
-            // 
-            // txtPrecioCompra
-            // 
-            this.txtPrecioCompra.Location = new System.Drawing.Point(609, 105);
-            this.txtPrecioCompra.Name = "txtPrecioCompra";
-            this.txtPrecioCompra.Size = new System.Drawing.Size(163, 26);
-            this.txtPrecioCompra.TabIndex = 29;
-            this.txtPrecioCompra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecioCompra_KeyPress);
             // 
             // frmCompras
             // 
