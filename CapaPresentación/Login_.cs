@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaEntidad;
+using CapaNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,27 +9,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaNegocio;
-using CapaEntidad;
 
 namespace CapaPresentación
 {
-    public partial class Login : Form
+    public partial class Login_ : Form
     {
-        public Login()
+        public Login_()
         {
             InitializeComponent();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-
-            clsUsuario oUSUARIO = new clsN_Usuario().Listar().Where (u => u.Documento == txtDocumento.Text && u.Clave == txtClave.Text).FirstOrDefault();
+            clsUsuario oUSUARIO = new clsN_Usuario().Listar().Where(u => u.Documento == txtDocumento.Text && u.Clave == txtClave.Text).FirstOrDefault();
 
             if (oUSUARIO != null)
             {
@@ -38,14 +32,17 @@ namespace CapaPresentación
             }
             else
             {
-                MessageBox.Show("No se encontró el usuario", 
-                                "Error del sistema", 
+                MessageBox.Show("No se encontró el usuario",
+                                "Error del sistema",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);
             }
-            
         }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         private void frm_closing(object sender, FormClosingEventArgs e)
         {
 
