@@ -11,6 +11,6 @@ namespace CapaDatos
 {
     public class clsConexion
     {
-        public static string Cadena = ConfigurationManager.ConnectionStrings["Cadena_Conexion"].ToString();
+        public static readonly string Cadena = ConfigurationManager.ConnectionStrings["Cadena_Conexion"].ToString();
     }
 }
