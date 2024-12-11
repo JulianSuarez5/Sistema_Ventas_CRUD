@@ -50,5 +50,24 @@ namespace CapaPresentación
             txtClave.Text = "";
             this.Show();
         }
+
+        private void Login__Load(object sender, EventArgs e)
+        {
+            iniciosesion.Parent = pictureBox1;
+            iniciosesion.BackColor = Color.Transparent;
+
+            documento.Parent = pictureBox1; 
+            documento.BackColor = Color.Transparent;
+
+            clave.Parent = pictureBox1;
+            clave.BackColor = Color.Transparent;
+
+            iconPictureBox1.Parent = pictureBox1;
+            iconPictureBox1.BackColor = Color.Transparent;
+
+            sistema.Parent = pictureBox1;
+            sistema.BackColor = Color.Transparent;
+
+        }
     }
 }

@@ -68,7 +68,9 @@
             this.btnLimpiarBuscador = new FontAwesome.Sharp.IconButton();
             this.cboBusqueda = new System.Windows.Forms.ComboBox();
             this.txtIndice = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -315,7 +317,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvUsuarios.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvUsuarios.RowTemplate.Height = 32;
-            this.dgvUsuarios.Size = new System.Drawing.Size(1100, 617);
+            this.dgvUsuarios.Size = new System.Drawing.Size(1172, 617);
             this.dgvUsuarios.TabIndex = 19;
             this.dgvUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellContentClick);
             this.dgvUsuarios.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvUsuarios_CellPainting);
@@ -361,7 +363,7 @@
             this.Correo.MinimumWidth = 8;
             this.Correo.Name = "Correo";
             this.Correo.ReadOnly = true;
-            this.Correo.Width = 200;
+            this.Correo.Width = 270;
             // 
             // Clave
             // 
@@ -413,7 +415,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label10.Location = new System.Drawing.Point(338, 42);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(1096, 58);
+            this.label10.Size = new System.Drawing.Size(1165, 58);
             this.label10.TabIndex = 20;
             this.label10.Text = "Lista de usuarios:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -458,7 +460,7 @@
             this.iconButton1.IconSize = 36;
             this.iconButton1.Location = new System.Drawing.Point(1277, 54);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(63, 39);
+            this.iconButton1.Size = new System.Drawing.Size(93, 39);
             this.iconButton1.TabIndex = 25;
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iconButton1.UseVisualStyleBackColor = false;
@@ -475,9 +477,9 @@
             this.btnLimpiarBuscador.IconColor = System.Drawing.Color.Black;
             this.btnLimpiarBuscador.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLimpiarBuscador.IconSize = 36;
-            this.btnLimpiarBuscador.Location = new System.Drawing.Point(1360, 54);
+            this.btnLimpiarBuscador.Location = new System.Drawing.Point(1396, 54);
             this.btnLimpiarBuscador.Name = "btnLimpiarBuscador";
-            this.btnLimpiarBuscador.Size = new System.Drawing.Size(58, 39);
+            this.btnLimpiarBuscador.Size = new System.Drawing.Size(88, 39);
             this.btnLimpiarBuscador.TabIndex = 26;
             this.btnLimpiarBuscador.UseVisualStyleBackColor = false;
             this.btnLimpiarBuscador.Click += new System.EventHandler(this.btnLimpiarBuscador_Click);
@@ -501,6 +503,17 @@
             this.txtIndice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtIndice.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::CapaPresentación.Properties.Resources.Log;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1515, 752);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -508,7 +521,7 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1446, 752);
+            this.ClientSize = new System.Drawing.Size(1515, 752);
             this.Controls.Add(this.txtIndice);
             this.Controls.Add(this.cboBusqueda);
             this.Controls.Add(this.btnLimpiarBuscador);
@@ -537,10 +550,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "frmUsuarios";
             this.Text = "frmUsuarios";
             this.Load += new System.EventHandler(this.frmUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -586,5 +601,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Rol;
         private System.Windows.Forms.DataGridViewTextBoxColumn EstadoValor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

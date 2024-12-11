@@ -62,7 +62,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // cboBusqueda
@@ -192,9 +194,9 @@
             this.btnLimpiarBuscador.IconColor = System.Drawing.Color.Black;
             this.btnLimpiarBuscador.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLimpiarBuscador.IconSize = 36;
-            this.btnLimpiarBuscador.Location = new System.Drawing.Point(1366, 57);
+            this.btnLimpiarBuscador.Location = new System.Drawing.Point(1470, 57);
             this.btnLimpiarBuscador.Name = "btnLimpiarBuscador";
-            this.btnLimpiarBuscador.Size = new System.Drawing.Size(58, 39);
+            this.btnLimpiarBuscador.Size = new System.Drawing.Size(131, 39);
             this.btnLimpiarBuscador.TabIndex = 54;
             this.btnLimpiarBuscador.UseVisualStyleBackColor = false;
             this.btnLimpiarBuscador.Click += new System.EventHandler(this.btnLimpiarBuscador_Click);
@@ -212,7 +214,7 @@
             this.btnBuscar.IconSize = 36;
             this.btnBuscar.Location = new System.Drawing.Point(1283, 57);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(63, 39);
+            this.btnBuscar.Size = new System.Drawing.Size(129, 39);
             this.btnBuscar.TabIndex = 53;
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -253,7 +255,7 @@
             this.label10.Location = new System.Drawing.Point(344, 45);
             this.label10.Name = "label10";
             this.label10.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.label10.Size = new System.Drawing.Size(1096, 58);
+            this.label10.Size = new System.Drawing.Size(1295, 58);
             this.label10.TabIndex = 49;
             this.label10.Text = "Lista de Clientes:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -438,6 +440,17 @@
             this.label1.Size = new System.Drawing.Size(318, 750);
             this.label1.TabIndex = 29;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::CapaPresentación.Properties.Resources.Log;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1671, 750);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 57;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -467,10 +480,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "frmClientes";
             this.Text = "frmClientes";
             this.Load += new System.EventHandler(this.frmClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,5 +525,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn EstadoValor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

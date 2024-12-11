@@ -72,18 +72,20 @@
             this.txtCambio = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new FontAwesome.Sharp.IconButton();
             this.btnAgregarVenta = new FontAwesome.Sharp.IconButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(227, 9);
+            this.label1.Location = new System.Drawing.Point(275, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1361, 833);
             this.label1.TabIndex = 21;
@@ -93,7 +95,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label2.Location = new System.Drawing.Point(266, 35);
+            this.label2.Location = new System.Drawing.Point(314, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(222, 36);
             this.label2.TabIndex = 22;
@@ -106,7 +108,7 @@
             this.groupBox1.Controls.Add(this.cboTipoDocumento);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(272, 85);
+            this.groupBox1.Location = new System.Drawing.Point(320, 76);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(466, 124);
             this.groupBox1.TabIndex = 23;
@@ -156,7 +158,7 @@
             this.groupBox2.Controls.Add(this.txtDocCliente);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Location = new System.Drawing.Point(803, 85);
+            this.groupBox2.Location = new System.Drawing.Point(851, 76);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(742, 124);
             this.groupBox2.TabIndex = 24;
@@ -238,7 +240,7 @@
             this.groupBox3.Controls.Add(this.txtCodProducto);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Location = new System.Drawing.Point(272, 215);
+            this.groupBox3.Location = new System.Drawing.Point(320, 206);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1097, 149);
             this.groupBox3.TabIndex = 25;
@@ -383,7 +385,7 @@
             this.Cantidad,
             this.Subtotal,
             this.btnEliminar});
-            this.dgvVentas.Location = new System.Drawing.Point(272, 370);
+            this.dgvVentas.Location = new System.Drawing.Point(320, 361);
             this.dgvVentas.Name = "dgvVentas";
             this.dgvVentas.ReadOnly = true;
             this.dgvVentas.RowHeadersWidth = 62;
@@ -450,7 +452,7 @@
             // txtTotalaPagar
             // 
             this.txtTotalaPagar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.txtTotalaPagar.Location = new System.Drawing.Point(1387, 410);
+            this.txtTotalaPagar.Location = new System.Drawing.Point(1435, 401);
             this.txtTotalaPagar.Name = "txtTotalaPagar";
             this.txtTotalaPagar.Size = new System.Drawing.Size(158, 26);
             this.txtTotalaPagar.TabIndex = 37;
@@ -461,7 +463,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.White;
             this.label12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label12.Location = new System.Drawing.Point(1383, 373);
+            this.label12.Location = new System.Drawing.Point(1431, 364);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(102, 20);
             this.label12.TabIndex = 36;
@@ -471,7 +473,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(1383, 477);
+            this.label13.Location = new System.Drawing.Point(1431, 468);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(80, 20);
             this.label13.TabIndex = 36;
@@ -479,7 +481,7 @@
             // 
             // txtPagaCon
             // 
-            this.txtPagaCon.Location = new System.Drawing.Point(1387, 514);
+            this.txtPagaCon.Location = new System.Drawing.Point(1435, 505);
             this.txtPagaCon.Name = "txtPagaCon";
             this.txtPagaCon.Size = new System.Drawing.Size(158, 26);
             this.txtPagaCon.TabIndex = 37;
@@ -490,7 +492,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(1383, 572);
+            this.label14.Location = new System.Drawing.Point(1431, 563);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(63, 20);
             this.label14.TabIndex = 36;
@@ -498,7 +500,7 @@
             // 
             // txtCambio
             // 
-            this.txtCambio.Location = new System.Drawing.Point(1387, 604);
+            this.txtCambio.Location = new System.Drawing.Point(1435, 595);
             this.txtCambio.Name = "txtCambio";
             this.txtCambio.Size = new System.Drawing.Size(158, 26);
             this.txtCambio.TabIndex = 37;
@@ -510,7 +512,7 @@
             this.btnRegistrar.IconChar = FontAwesome.Sharp.IconChar.Tag;
             this.btnRegistrar.IconColor = System.Drawing.Color.DodgerBlue;
             this.btnRegistrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnRegistrar.Location = new System.Drawing.Point(1387, 686);
+            this.btnRegistrar.Location = new System.Drawing.Point(1435, 677);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(158, 66);
             this.btnRegistrar.TabIndex = 38;
@@ -527,7 +529,7 @@
             this.btnAgregarVenta.IconColor = System.Drawing.Color.ForestGreen;
             this.btnAgregarVenta.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAgregarVenta.IconSize = 65;
-            this.btnAgregarVenta.Location = new System.Drawing.Point(1387, 215);
+            this.btnAgregarVenta.Location = new System.Drawing.Point(1435, 206);
             this.btnAgregarVenta.Name = "btnAgregarVenta";
             this.btnAgregarVenta.Size = new System.Drawing.Size(158, 138);
             this.btnAgregarVenta.TabIndex = 39;
@@ -536,6 +538,17 @@
             this.btnAgregarVenta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnAgregarVenta.UseVisualStyleBackColor = true;
             this.btnAgregarVenta.Click += new System.EventHandler(this.btnAgregarVenta_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::CapaPresentación.Properties.Resources.Log;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1818, 910);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
             // 
             // frmVentas
             // 
@@ -556,6 +569,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "frmVentas";
             this.Text = "frmVentas";
             this.Load += new System.EventHandler(this.frmVentas_Load);
@@ -567,6 +581,7 @@
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -616,5 +631,6 @@
         private System.Windows.Forms.TextBox txtCambio;
         private FontAwesome.Sharp.IconButton btnRegistrar;
         private FontAwesome.Sharp.IconButton btnAgregarVenta;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

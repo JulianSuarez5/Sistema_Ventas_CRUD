@@ -53,7 +53,7 @@ namespace CapaPresentación
             formulario.TopLevel = false;
             formulario.FormBorderStyle = FormBorderStyle.None;
             formulario.Dock = DockStyle.Fill;
-            formulario.BackColor = Color.CadetBlue;
+            //formulario.BackColor = Color.CadetBlue;
 
             pnlContenedor.Controls.Add(formulario);
             formulario.Show();
