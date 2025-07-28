@@ -11,6 +11,7 @@ namespace CapaDatos
 {
     public class clsD_Venta
     {
+        #region[Método para obtener el ID consecutivo de la venta]
         public int ObtenerConsecutivo()
         {
             int IdConsecutivo = 0;
@@ -37,7 +38,9 @@ namespace CapaDatos
 
             return IdConsecutivo;
         }
+        #endregion
 
+        #region[Método para ir restando el stock despues de una venta]
         public bool RestarStock(int idproducto, int cantidad)
         {
             bool respuesta = true;
@@ -65,7 +68,9 @@ namespace CapaDatos
             }
             return respuesta;
         }
+        #endregion
 
+        #region[Método para sumar stock en caso de que se requiera devolver unidades al inventario ]
         public bool SumarStock(int idproducto, int cantidad)
         {
             bool respuesta = true;
@@ -93,7 +98,9 @@ namespace CapaDatos
             }
             return respuesta;
         }
-
+        #endregion
+        
+        #region[Método para registrar las ventas]
         public bool Registrar(clsVenta obj, DataTable DetalleVenta, out string Mensaje)
         {
             bool Respuesta = false;
@@ -133,7 +140,9 @@ namespace CapaDatos
             }
             return Respuesta;
         }
+        #endregion
 
+        #region[Método para recuperar los detalles completos de una venta específica]
         public clsVenta ObtenerVenta(string numero)
         {
             clsVenta obj = new clsVenta();
@@ -186,7 +195,9 @@ namespace CapaDatos
             }
                 return obj;
         }
+        #endregion
 
+        #region[Método para recuperar los detalles específicos de los productos vendidos en una venta determinada]
         public List<clsDetalle_Venta> ObtenerDetalleVenta(int idventa)
         {
             List<clsDetalle_Venta> objLista = new List<clsDetalle_Venta>();
@@ -231,5 +242,6 @@ namespace CapaDatos
 
                 return objLista;
         }
+        #endregion
     }
 }

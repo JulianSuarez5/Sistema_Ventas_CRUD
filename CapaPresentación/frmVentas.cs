@@ -3,13 +3,9 @@ using CapaNegocio;
 using CapaPresentación.Modales;
 using CapaPresentación.Utilidades;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CapaPresentación
@@ -25,8 +21,8 @@ namespace CapaPresentación
 
         private void frmVentas_Load(object sender, EventArgs e)
         {
-            cboTipoDocumento.Items.Add(new clsOpcionCombo() { Valor = "Factura Electrónica", Texto = "Factura Electrónica"});
-            cboTipoDocumento.Items.Add(new clsOpcionCombo() { Valor = "Factura Ordinaria", Texto = "Factura Ordinaria"});
+            cboTipoDocumento.Items.Add(new clsOpcionCombo() { Valor = "Factura Electrónica", Texto = "Factura Electrónica" });
+            cboTipoDocumento.Items.Add(new clsOpcionCombo() { Valor = "Factura Ordinaria", Texto = "Factura Ordinaria" });
             cboTipoDocumento.DisplayMember = "Texto";
             cboTipoDocumento.ValueMember = "Valor";
             cboTipoDocumento.SelectedIndex = 0;
@@ -60,7 +56,7 @@ namespace CapaPresentación
 
         private void btnBuscarProducto_Click(object sender, EventArgs e)
         {
-             using (var formulario = new frmModalProductos())
+            using (var formulario = new frmModalProductos())
             {
                 var resultado = formulario.ShowDialog();
 
@@ -100,7 +96,7 @@ namespace CapaPresentación
                     txtCodProducto.BackColor = Color.MistyRose;
                     txtIdProducto.Text = "0";
                     txtNombreProducto.Text = "";
-                    txtPrecio.Text ="";
+                    txtPrecio.Text = "";
                     txtStock.Text = "";
                     nudCantidad.Value = -1;
                 }
@@ -139,7 +135,7 @@ namespace CapaPresentación
                                 "Mensaje",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Exclamation);
-                                txtPrecio.Select();
+                txtPrecio.Select();
                 return;
             }
 
@@ -315,14 +311,14 @@ namespace CapaPresentación
             decimal PagaCon;
             decimal Total = Convert.ToDecimal(txtTotalaPagar.Text);
 
-            if (txtPagaCon.Text.Trim() =="")
+            if (txtPagaCon.Text.Trim() == "")
             {
                 txtPagaCon.Text = "0";
             }
 
             if (decimal.TryParse(txtPagaCon.Text.Trim(), out PagaCon))
             {
-                if(PagaCon < Total)
+                if (PagaCon < Total)
                 {
                     txtCambio.Text = "0.00";
                 }
